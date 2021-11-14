@@ -18,6 +18,8 @@ public class TransformHandler : MonoBehaviour
     public Camera camToSyncToY = null;
     public UpdateType updateType = UpdateType.Update;
 
+    private Rigidbody2D[] rigidbody2Ds = null;
+
     private Vector3 pixelPerfectClamp(Vector3 locationVector, float pixelsPerUnit)
     {
         Vector3 vectorInPixels = new Vector3(Mathf.CeilToInt(locationVector.x * pixelsPerUnit), Mathf.CeilToInt(locationVector.y * pixelsPerUnit), Mathf.CeilToInt(locationVector.z * pixelsPerUnit));
@@ -28,6 +30,8 @@ public class TransformHandler : MonoBehaviour
     {
         CinemachineCore.CameraUpdatedEvent.RemoveListener(OnCameraUpdated);
         CinemachineCore.CameraUpdatedEvent.AddListener(OnCameraUpdated);
+
+        rigidbody2Ds = gameObject.GetComponentsInChildren<Rigidbody2D>();
     }
 
     private void OnDisable()
@@ -53,8 +57,14 @@ public class TransformHandler : MonoBehaviour
                 newPos = pixelPerfectClamp(transform.position + newPos, pixelsPerUnit);
                 transform.position = newPos;
             }
-            else
-                transform.Translate(newPos);
+            else {
+                if (rigidbody2Ds.Length == 0)
+                    transform.Translate(newPos);
+                else
+                    foreach (Rigidbody2D rb in rigidbody2Ds)
+                        rb.MovePosition(rb.position + new Vector2(newPos.x, newPos.y));
+
+            }
         }
     }
 

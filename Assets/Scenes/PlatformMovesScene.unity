@@ -535,7 +535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278944460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.224801, y: -0.00000047683716, z: -10}
+  m_LocalPosition: {x: 6.754609, y: -0.00000047683716, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1288931477}
@@ -9766,7 +9766,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749203864}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -9777,8 +9777,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!483693784 &749203869
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -132038,7 +132038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932226254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.224801, y: -0.00000047683716, z: -10}
+  m_LocalPosition: {x: 6.754609, y: -0.00000047683716, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1043871187}
@@ -132617,7 +132617,7 @@ MonoBehaviour:
   pixelsPerUnit: 32
   usePixelPerfectAlignment: 0
   camToSyncToY: {fileID: 0}
-  updateType: 1
+  updateType: 2
 --- !u!1 &1759890492
 GameObject:
   m_ObjectHideFlags: 0
