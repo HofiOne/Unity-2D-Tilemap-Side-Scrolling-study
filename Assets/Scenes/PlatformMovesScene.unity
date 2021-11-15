@@ -300,10 +300,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -1
+  camToSyncToY: {fileID: 0}
   pixelsPerUnit: 0
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 0}
   updateType: 1
+  useRigidbodyMoving: 1
 --- !u!1 &220132764
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220132764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.62, y: 0, z: 0}
+  m_LocalPosition: {x: -0.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -506,7 +507,9 @@ MonoBehaviour:
   controlMovementSpeed: 4
   pixelsPerUnit: 128
   usePixelPerfectAlignment: 0
+  framingCamera: {fileID: 0}
   framingObject: {fileID: 1043871186}
+  framingObjectEdgeTolerance: 5
   useRigidBody: 1
   updateType: 2
 --- !u!1 &278944460
@@ -535,7 +538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278944460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.754609, y: -0.00000047683716, z: -10}
+  m_LocalPosition: {x: 16.683296, y: -0.00000047683716, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1288931477}
@@ -9770,9 +9773,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000000
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
@@ -132038,7 +132041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932226254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.754609, y: -0.00000047683716, z: -10}
+  m_LocalPosition: {x: 10.512001, y: -0.00000047683716, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1043871187}
@@ -132614,10 +132617,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -3
+  camToSyncToY: {fileID: 0}
   pixelsPerUnit: 32
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 0}
   updateType: 2
+  useRigidbodyMoving: 1
 --- !u!1 &1759890492
 GameObject:
   m_ObjectHideFlags: 0

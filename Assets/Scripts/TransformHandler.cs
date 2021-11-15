@@ -42,8 +42,7 @@ public class TransformHandler : MonoBehaviour
 
     void DoWork(float timeMultiplier)
     {
-        if (speed != 0 || camToSyncToY
-            ) {
+        if (speed != 0 || camToSyncToY) {
             Vector3 newPos = Vector3.zero;
 
             if (speed != 0)

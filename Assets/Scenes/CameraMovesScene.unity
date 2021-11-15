@@ -326,7 +326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220132764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.16, y: 0, z: 0}
+  m_LocalPosition: {x: -6.82, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -423,12 +423,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7baceb1c966342d18878c5e9a498522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteSize: {x: 0, y: 0}
+  spriteSize: {x: 2, y: 1.5}
   staticSpeed: {x: 3, y: 0, z: 0}
   controlMovementSpeed: 4
   pixelsPerUnit: 32
   usePixelPerfectAlignment: 0
+  framingCamera: {fileID: 2062259609}
   framingObject: {fileID: 2027837331}
+  framingObjectEdgeTolerance: 5
   useRigidBody: 1
   updateType: 2
 --- !u!1 &278944460
@@ -457,7 +459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278944460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6876793, y: -0.00000047683716, z: -10}
+  m_LocalPosition: {x: 10.567192, y: -0.00000047683716, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1288931477}
@@ -693,10 +695,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  camToSyncToY: {fileID: 0}
   pixelsPerUnit: 32
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 0}
   updateType: 1
+  useRigidbodyMoving: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -894,7 +897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638047186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 3.86, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1701870786}
@@ -952,10 +955,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  camToSyncToY: {fileID: 932226259}
   pixelsPerUnit: 32
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 932226259}
   updateType: 1
+  useRigidbodyMoving: 0
 --- !u!20 &638047190
 Camera:
   m_ObjectHideFlags: 0
@@ -134902,7 +134906,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932226254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6876793, y: -0.00000047683716, z: -10}
+  m_LocalPosition: {x: 10.567192, y: -0.00000047683716, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1717480929}
@@ -135500,10 +135504,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  camToSyncToY: {fileID: 0}
   pixelsPerUnit: 0
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 0}
   updateType: 1
+  useRigidbodyMoving: 0
 --- !u!114 &1701870788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135689,7 +135694,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -135700,7 +135705,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.7, y: 18}
+  m_Size: {x: 26, y: 18}
   m_EdgeRadius: 0
 --- !u!4 &2027837333
 Transform:
@@ -135796,10 +135801,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  camToSyncToY: {fileID: 0}
   pixelsPerUnit: 32
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 0}
   updateType: 1
+  useRigidbodyMoving: 0
 --- !u!20 &2062259609
 Camera:
   m_ObjectHideFlags: 0

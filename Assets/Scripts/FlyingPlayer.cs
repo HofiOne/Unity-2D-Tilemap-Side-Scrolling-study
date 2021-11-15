@@ -15,9 +15,11 @@ public class FlyingPlayer : MonoBehaviour
     public float pixelsPerUnit = 0f;
     public bool usePixelPerfectAlignment = false;
 
+    public Camera framingCamera = null;
     // Just for simplicity it is a box collider now with a layer mask that never collides with anything in the scene
     // Anything would do with a design time editable box shape that has size property
     public BoxCollider2D framingObject = null;
+    public float framingObjectEdgeTolerance = 5;
 
     public bool useRigidBody = true;
 
@@ -41,6 +43,13 @@ public class FlyingPlayer : MonoBehaviour
     protected void Start()
     {
         SetupPhysics();
+
+        if (framingCamera && framingObject) {
+            // ok, this makes usage of framingObject useless here, but this is a quick hackish way to align at least a bit the framing box to the current screen resolution
+            float camHalfHeight = framingCamera.orthographicSize;
+            float camHalfWidth = camHalfHeight * framingCamera.aspect;
+            framingObject.size = new Vector2(camHalfWidth * 2 - framingObjectEdgeTolerance, camHalfHeight * 2);
+        }
     }
     //------------------------------------------------------------------------------
 
@@ -128,8 +137,11 @@ public class FlyingPlayer : MonoBehaviour
         if (usePixelPerfectAlignment && pixelsPerUnit != 0)
             newPos = pixelPerfectClamp(newPos, pixelsPerUnit);
 
-        if (useRigidBody && rb)
+        if (useRigidBody && rb) {
+            // Yes, it must only be kinematic this way so this one is a mess now :S
+            // Should use someting that changes the velocity only like AddForce 
             rb.MovePosition(newPos);
+        }
         else {
             if (usePixelPerfectAlignment)
                 transform.position = newPos;

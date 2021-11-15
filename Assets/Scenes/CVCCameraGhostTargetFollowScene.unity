@@ -240,10 +240,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  camToSyncToY: {fileID: 0}
   pixelsPerUnit: 0
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 0}
   updateType: 1
+  useRigidbodyMoving: 0
 --- !u!1 &205126055
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,10 +290,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  camToSyncToY: {fileID: 0}
   pixelsPerUnit: 0
   usePixelPerfectAlignment: 0
-  camToSyncToY: {fileID: 0}
   updateType: 2
+  useRigidbodyMoving: 0
 --- !u!61 &205126058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -419,7 +421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220132764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.86, y: 0, z: 0}
+  m_LocalPosition: {x: -7.58, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -521,7 +523,9 @@ MonoBehaviour:
   controlMovementSpeed: 4
   pixelsPerUnit: 128
   usePixelPerfectAlignment: 0
+  framingCamera: {fileID: 932226259}
   framingObject: {fileID: 205126058}
+  framingObjectEdgeTolerance: 5
   useRigidBody: 1
   updateType: 2
 --- !u!1 &278944460
@@ -550,7 +554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278944460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.57, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1288931477}
@@ -679,7 +683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448723401}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.57, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1717480929}
@@ -132099,7 +132103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932226254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.57, y: 0, z: -10}
+  m_LocalPosition: {x: 3.487999, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1717480929}
