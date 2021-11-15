@@ -63,7 +63,6 @@ public class TransformHandler : MonoBehaviour
                 else
                     foreach (Rigidbody2D rb in rigidbody2Ds)
                         rb.MovePosition(rb.position + new Vector2(newPos.x, newPos.y));
-
             }
         }
     }
