@@ -611,7 +611,7 @@ MonoBehaviour:
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
   m_BoundingShape2D: {fileID: 1614481352}
-  m_ConfineScreenEdges: 0
+  m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!1 &375537484
 GameObject:
@@ -132183,7 +132183,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932226254}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &932226259
 Camera:
   m_ObjectHideFlags: 0
