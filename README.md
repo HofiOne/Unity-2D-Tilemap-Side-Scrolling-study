@@ -17,6 +17,7 @@ The layers (actually their content, but it does not matter) simply were moved by
 
 In that original version, based on my false assumptions, I simply moved that foremost layer just like the others (that do not have any rigidbodies or colliders attached to) and I did not pay attention on how really the rigidbodies are allowed to be moved. (actually it was a static rigidbody that is not allowed to be moved at all, that is why it is called static :D )
 This led me to a very poor performance that is nicely confirmed in Unity profiler. (interesting fact that it still mostly performed with 60 fps on my nowadays oldscool late 2013, 15'' MacBook Pro, so huge grats to the Physics sytem developers that the Unity Physics system was still able to perform acceptable even if i did my best to make its job the hardest possible with my extremely false implementation, usage)
+![Poor1](Assets/Sprires/Screenshots/Profiling_1.png)
 
 My first thought was I should try a different method to get it perform better therefore I started to play with how it could be implemented using camera moving only.
 The frist version of that used at the end Unity camera stacks where dedicated cameras rendering the given layers and the cameras are moving by the required speed to get the platform move (and parallax effect), This version also used a Cinemacine camera as I did not want all the time to lose the really nice "Framing Transposer" caused effects (note, unfortunately i still was not able to mimic fully it neither with this nor with the third solution bellow)
