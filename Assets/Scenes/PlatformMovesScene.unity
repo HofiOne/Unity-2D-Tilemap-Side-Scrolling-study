@@ -9778,7 +9778,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!483693784 &749203869
 TilemapRenderer:
   m_ObjectHideFlags: 0

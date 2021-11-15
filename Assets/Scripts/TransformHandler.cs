@@ -13,10 +13,11 @@ public enum UpdateType
 public class TransformHandler : MonoBehaviour
 {
     public float speed = 3f;
+    public Camera camToSyncToY = null;
     public float pixelsPerUnit = 0f;
     public bool usePixelPerfectAlignment = false;
-    public Camera camToSyncToY = null;
     public UpdateType updateType = UpdateType.Update;
+    public bool useRigidbodyMoving = false;
 
     private Rigidbody2D[] rigidbody2Ds = null;
 
@@ -58,7 +59,7 @@ public class TransformHandler : MonoBehaviour
                 transform.position = newPos;
             }
             else {
-                if (rigidbody2Ds.Length == 0)
+                if (rigidbody2Ds.Length == 0 || false == useRigidbodyMoving)
                     transform.Translate(newPos);
                 else
                     foreach (Rigidbody2D rb in rigidbody2Ds)
