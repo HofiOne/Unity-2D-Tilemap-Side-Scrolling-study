@@ -24,8 +24,12 @@ The frist version of that used at the end Unity camera stacks where dedicated ca
 The second version performed much better (especially after i removed the unnecessary cameras from the camera stack, one more thing I've learnt is that, of course, rendering multiple cameras has its cost too (such a surprise, is not it? ;) ), but as i mentioned I could not fully mimic the original "Framing Transposer" effect so I started to investigate a more Cinemacine Camera focused solution. I got a very huge help in the [Cinemachine](https://forum.unity.com/forums/cinemachine.136/) Unity forum from [Gregoryl](https://forum.unity.com/members/gregoryl.1242385/), based on that I've added the basic implementation of the third version that uses a ghost gameobject that is followed by the Cinemachine camera on a tricky way.
 This version performs the best now, but still cannot mimic the loving "Framing Transposer" effect (actually even a bit worth than the second version can provide as I could not find a proper y dumping value that is even close to the one in the second version)
 
+Here you can see a comparision chart of the 3 solution actual performance.
+![Profiling3](Assets/Sprires/Screenshots/Profileing_3.png) 
 
-I wish i could say that i found a, for me at least, fully satisfying solution but I've definitely learned a lot again.
+I hope this would help someday for someone to spare some time or just learn new things like it did for me!
+
+I wish i could say that i found a, for me at least, fully satisfying solution but at least I've definitely learned a lot again ;)
 
 
 Related Unity forum discussions:
