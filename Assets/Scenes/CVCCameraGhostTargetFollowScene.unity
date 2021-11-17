@@ -243,7 +243,7 @@ MonoBehaviour:
   camToSyncToY: {fileID: 0}
   pixelsPerUnit: 0
   usePixelPerfectAlignment: 0
-  updateType: 1
+  updateType: 0
   useRigidbodyMoving: 0
 --- !u!1 &205126055
 GameObject:
@@ -339,7 +339,7 @@ Rigidbody2D:
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
